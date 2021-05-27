@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Select the figure whose area is to be known.</h1>
+    </div>
+
+    <div id="choices">
+        <div id="rectangle" class="fig">
+            <p>RECTANGLE</p>
+        </div>
+
+        <div id="square" class="fig">
+            <p>SQUARE</p>
+        </div>
+
+        <div id="circle" class="fig">
+            <p>CIRCLE</p>
+        </div>
+
+        <div id="triangle" class="fig">
+            <p>TRIANGLE</p>
+        </div>
+
+        <!-- <div id="rhombus" class="fig">
+            <p>RHOMBUS</p>
+        </div>
+        
+        <div id="parallelogram" class="fig">
+            <p>PARALLELOGRAM</p>
+        </div> -->
+    </div>
+
+    <div id="display">
+        <div id="calculationrec">
+            <form id="recfrm">
+            <h2 id="figName">Rectangle</h2>
+            <br>
+            <p id="reclength"> Enter Length</p>
+            <input type="number" id="recfirst">
+            <br>
+            <br>
+            <p id="recbreadth"> Enter Breadth</p>
+            <input type="number" id="recsecond">
+            <button onclick="findRec()" id="recsubmit">Calculate</button>
+            </form>
+        <div id="recans" ></div>
+        </div>
+
+        <div id="calculationsqr">
+            <form id="sqrfrm">
+            <h2 id="figName">Square</h2>
+            <br>
+            <p id="sqrside"> Enter Sidelength </p>
+            <input type="number" id="sqrfirst">
+            <br>
+            <br>
+            <button onclick="findSqr()" id="sqrsubmit">Calculate</button>
+            </form>
+        <div id="sqrans" ></div>
+        </div>
+
+        <div id="calculationcir">
+            <form id="cirfrm">
+            <h2 id="figName">Circle</h2>
+            <br>
+            <p id="cirradius"> Enter radius </p>
+            <input type="number" id="cirfirst">
+            <br>
+            <br>
+            <button onclick="findCir()" id="cirsubmit">Calculate</button>
+            </form>
+        <div id="cirans" ></div>
+        </div>
+
+        <div id="calculationtri">
+            <form id="trifrm">
+            <h2 id="figName">Triangle</h2>
+            <br>
+            <p id="tribase"> Enter Base</p>
+            <input type="number" id="trifirst">
+            <br>
+            <br>
+            <p id="recheight"> Enter Height</p>
+            <input type="number" id="trisecond">
+            <button onclick="findTri()" id="trisubmit">Calculate</button>
+            </form>
+        <div id="trians" ></div>
+        </div>
+    </div>
+
+        <div id="info">
+            <div id="rectangleInfo" class="info">
+                <div id="recimg"><img src="RectangleArtboard 1-100.jpg" alt="photo" ></div>
+                <p>A rectangle is a 2D shape in geometry, having 4 sides and 4 corners. Its two sides meet at right angles. Thus, a rectangle has 4 angles, each measuring 90 °. The opposite sides of a rectangle have the same lengths and are parallel.</p>
+
+            </div>
+            <div id="squareInfo" class="info">
+                <div id="sqrimg"><img src="SquareArtboard 1-100.jpg" alt="photo" ></div>
+                <p>A square is formed with four equal or roughly equal sides and four right angles.</p>
+                
+            </div>
+            <div id="circleInfo" class="info">
+                <div id="cirimg"><img src="circleArtboard 1-100.jpg" alt="photo" ></div>
+                <p>In geometry, a circle is a perfectly round shape—meaning any point around its curve is the same distance from its central point.</p>
+                
+            </div>
+            <div id="triangleInfo" class="info">
+                <div id="triimg"><img src="triangleArtboard 1-100.jpg" alt="photo" ></div>
+                <p>A triangle is a three-sided polygon that closes in a space. It uses lines, line segments or rays (in any combination) to form the three sides. When three sides form and meet, they create three vertices, or corners.</p>
+                
+            </div>
+
+
+        </div>
+        
+
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
