@@ -68,7 +68,7 @@ function findSqr(){
 function findCir(){
     event.preventDefault();
     x= document.getElementById("cirfirst").value;
-    z= x * 3.14;
+    z= x * x * 3.14;
     document.getElementById("cirans").innerHTML= "Area is :" + z;
     show("cirans");
 }
